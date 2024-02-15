@@ -13,7 +13,7 @@ const Banner = dynamic(() => import("@/components/common/Banner"), {
 
 const Card = dynamic(() => import("./(components)/Card"), { ssr: false });
 
-export async function BannerData(props: any) {
+async function BannerData(props: any) {
   const result = await axiosInstance(props);
   return result.data.results[
     Math.floor(Math.random() * result.data.results.length - 1)
