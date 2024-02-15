@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Home",
+        "path": "/Home"
+    },
+    {
+        "id": 2,
+        "name": "TV Series",
+        "path": "/TvShows"
+    },
+    {
+        "id": 2,
+        "name": "Movies",
+        "path": "/Movies"
+    },
+    {
+        "id": 4,
+        "name": "News & Popular",
+        "path": "/popular"
+    },
+    {
+        "id": 5,
+        "name": "My List",
+        "path": "/mylist"
+    },
+    {
+        "id": 6,
+        "name": "Browse by Language",
+        "path": "/browsebylang"
+    }
+]
