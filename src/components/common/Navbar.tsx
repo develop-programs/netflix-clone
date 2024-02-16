@@ -37,7 +37,7 @@ export default function Navbar() {
         Position
           ? "bg-black duration-500 ease-in"
           : "bg-transparent duration-500 ease-out"
-      } h-16 flex items-center px-12 z-50`}
+      } h-16 flex items-center xl:px-12 z-50`}
     >
       <div>
         <Image
@@ -48,8 +48,8 @@ export default function Navbar() {
           className="w-auto h-auto"
         />
       </div>
-      <div className="flex-1 ms-12">
-        <div className="xl:hidden">
+      <div className="flex-1 xl:ms-12">
+        <div className="hidden md:visible xl:hidden">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="default">

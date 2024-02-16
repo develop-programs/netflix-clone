@@ -72,12 +72,12 @@ export default function Modal() {
             className="w-full h-1/3 aspect-video object-cover rounded-t-2xl"
           />
           <div className="absolute bottom-0 h-3/4 w-full flex">
-            <div className="flex-1 flex flex-col gap-3 ps-24 pt-24">
-              <span className="text-4xl font-bold">
+            <div className="flex-1 flex flex-col gap-3 ps-4 md:ps-24 md:pt-24">
+              <span className="text-2xl md:text-4xl font-bold">
                 {data.title || data.name || data.original_name}
               </span>
-              <span>{truncate(data.overview, 120)}</span>
-              <div className="flex gap-4 mt-6">
+              <span className="w-full">{truncate(data.overview, 120)}</span>
+              <div className="flex gap-4 md:mt-6">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -208,7 +208,7 @@ export default function Modal() {
                 </HoverCard>
               </div>
             </div>
-            <div className="flex-1 flex justify-end items-end p-12">
+            <div className="flex justify-end items-end pb-6 pe-6 xl:p-12">
               <span className="text-xl font-bold">
                 {data.original_language}
               </span>
@@ -219,7 +219,7 @@ export default function Modal() {
           <span className="text-lg font-bold">Released At:-</span>
           {data.release_date}
         </div>
-        <div className="w-full flex gap-2 p-6">
+        <div className="w-full flex flex-col md:flex-row gap-2 p-6">
           <div className="flex-1 flex flex-col gap-2">
             <span>Overview</span>
             <span>{data.overview}</span>

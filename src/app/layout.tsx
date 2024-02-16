@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import ReduxProvider from "@/middleware/ReduxProvider";
 import Modal from "@/components/common/Modal";
+import Footer from "@/components/common/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({
           </ThemeProvider>
           <Modal />
         </ReduxProvider>
+        <Footer />
       </body>
     </html>
   );

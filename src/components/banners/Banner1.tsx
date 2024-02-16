@@ -13,13 +13,17 @@ export default function Banner1() {
         </div>
       </div>
       <div className="relative flex-1 flex justify-center items-center h-auto">
-        <img src="/tv-removebg-preview.png" alt="" className="z-10 scale-125" />
+        <img
+          src="/tv-removebg-preview.png"
+          alt=""
+          className="z-10 scale-105 xl:scale-125"
+        />
         <div className="absolute flex justify-center items-center">
           <video
             loop
             autoPlay
             muted
-            className="w-full scale-[.9] -mt-2 md:scale-[1.08] md:-mt-4 lg:scale-[.9] xl:scale-[1.1] xl:-mt-4 xl:-ms-2"
+            className="w-full scale-[.75] -mt-2 md:scale-[.9] md:-mt-4 lg:scale-[.75] xl:scale-[1.1] xl:-mt-4 xl:-ms-2"
           >
             <source src="./video-tv-in-0819.mp4" />
           </video>

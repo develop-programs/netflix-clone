@@ -16,7 +16,7 @@ export default function Banner3() {
         <img
           src="/device-pile-in-removebg-preview.png"
           alt=""
-          className="z-10 scale-110 xl:scale-125"
+          className="z-10 scale-105 xl:scale-125"
         />
         <div className="absolute flex justify-center items-center">
           <video

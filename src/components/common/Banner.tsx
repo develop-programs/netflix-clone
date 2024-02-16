@@ -43,13 +43,15 @@ export default function Banner(data: any) {
     >
       <div className="absolute w-full h-full bg-black bg-opacity-60"></div>
       <div className="absolute w-full h-3/4 bottom-0 flex">
-        <div className="flex-1 flex flex-col gap-6 ms-24 pt-32">
-          <span className="text-6xl font-black tracking-wide">
+        <div className="flex-1 flex flex-col gap-6 md:ms-24 pt-24 md:pt-32 px-4">
+          <span className="text-3xl md:text-6xl font-black tracking-wide">
             {data.data.title || data.data.original_name}
           </span>
-          <span className="text-lg">{truncate(data.data.overview, 150)}</span>
+          <span className="text-sm md:text-lg">
+            {truncate(data.data.overview, 150)}
+          </span>
           <div className="flex gap-6 items-center">
-            <Button className="text-2xl py-8 px-8 font-bold flex items-center gap-2">
+            <Button className="text-lg md:text-2xl py-4 md:py-8 px-4 md:px-8 font-bold flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -67,7 +69,7 @@ export default function Banner(data: any) {
               Play
             </Button>
             <Button
-              className="text-2xl py-8 px-8 font-bold flex items-center gap-2"
+              className="text-lg md:text-2xl py-4 md:py-8 px-4 md:px-8 font-bold flex items-center gap-2"
               onClick={() => {
                 FetchData(data.data.media_type, data.data.id);
               }}
@@ -90,7 +92,7 @@ export default function Banner(data: any) {
             </Button>
           </div>
         </div>
-        <div className="flex-1 flex justify-end">
+        <div className="flex-1 hidden md:flex justify-end">
           <div className="mt-96 flex">
             <div className="w-2 h-16 bg-white"></div>
             <div className="w-32 h-16 bg-white bg-opacity-40 flex items-center text-black text-xl font-bold ps-6">

@@ -51,7 +51,7 @@ export default function Recommendation() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <span
-                  className="absolute inset-0 text-md font-bold p-2 mt-14"
+                  className="absolute inset-0 text-md font-bold p-2 mt-6 md:mt-14 lg:mt-24"
                   style={{
                     textShadow: "0px 0px 5px black",
                   }}
