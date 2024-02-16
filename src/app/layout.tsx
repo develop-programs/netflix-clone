@@ -36,7 +36,6 @@ export default function RootLayout({
           </ThemeProvider>
           <Modal />
         </ReduxProvider>
-        <Footer />
       </body>
     </html>
   );

@@ -3,10 +3,12 @@ import Banner2 from "@/components/banners/Banner2";
 import Banner3 from "@/components/banners/Banner3";
 import Banner4 from "@/components/banners/Banner4";
 import CustomerQuery from "@/components/common/CustomerQuery";
+import Footer from "@/components/common/Footer";
 import WelcomeNav from "@/components/common/WelcomeNav";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -47,22 +49,25 @@ export default function Home() {
                   variant="default"
                   size="default"
                   className="bg-[rgb(255,0,0)] hover:bg-[rgba(255,0,0,0.9)] text-white text-2xl py-7"
+                  asChild
                 >
-                  Get Started
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                    />
-                  </svg>
+                  <Link href="/Home">
+                    Get Started
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -84,6 +89,7 @@ export default function Home() {
       <div className="h-auto border-b-8 border-stone-800 px-4 md:px-14 lg:px-4 xl:px-52 py-24">
         <CustomerQuery />
       </div>
+      <Footer />
     </main>
   );
 }
