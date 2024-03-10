@@ -1,5 +1,6 @@
 import { TrendingData } from "@/lib/axios/ApiData";
 import { axiosInstance } from "@/lib/axios/fetch";
+import { unstable_noStore as noStore } from "next/cache";
 import React from "react";
 import dynamic from "next/dynamic";
 
