@@ -23,9 +23,8 @@ export default function Mylist() {
         <div key={index} className="flex">
           <div>
             <Image
-              src={`https://image.tmdb.org/t/p/original${
-                item.backdrop_path || item.poster_path
-              }`}
+              src={`https://image.tmdb.org/t/p/original${item.backdrop_path || item.poster_path
+                }`}
               alt=""
               width={500}
               height={500}
