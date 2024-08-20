@@ -2,6 +2,7 @@ import { TrendingData } from "@/lib/axios/ApiData";
 import { axiosInstance } from "@/lib/axios/fetch";
 import React from "react";
 import dynamic from "next/dynamic";
+import { unstable_noStore as noStore } from "next/cache";
 
 const Navbar = dynamic(() => import("@/components/common/Navbar"), {
   ssr: false,
@@ -14,6 +15,7 @@ const Banner = dynamic(() => import("@/components/common/Banner"), {
 const Card = dynamic(() => import("./(components)/Card"), { ssr: false });
 
 async function BannerData(props: any) {
+  noStore();
   const result = await axiosInstance(props);
   return result.data.results[
     Math.floor(Math.random() * result.data.results.length - 1)
